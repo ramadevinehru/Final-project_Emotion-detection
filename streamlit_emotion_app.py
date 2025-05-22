@@ -9,7 +9,7 @@ import os
 # Define device
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# Define the same CNN model architecture used during training
+# Defining the same CNN model architecture used during training
 class EmotionCNN(nn.Module):
     def __init__(self, num_classes=7):
         super(EmotionCNN, self).__init__()
